@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+   <html style = "margin-left: 5%;
+    border: mediumpurple;
+    margin-right: 5%;"   >
+    <head>
+      
+        <title> Katherine Page </title>
+        
+        <link rel = "stylesheet"
+            href = "EstilosCSS/estilos.css">
+          
+        <link rel = "stylesheet"
+            href = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+            
+        <link rel = "stylesheet" 
+               href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" > 
+            
+       </head>    
+    
+    <body>
+      
+      
+      
+       
+<nav class="navbar navbar-default">
+ <div class = "container-fluid">
+     <div class = "navbar-header">
+         <a class = "navbar-brand">Katherine's Page</a>
+     </div>
+     
+     <div class="collapse navbar-collapse">
+     <ul class = "nav navbar-nav">
+        <li>
+            <a href="../Ejercicio1.html">Inicio</a>
+        </li>
+        <li>
+            <a href="Rutas/Foto.html">Foto</a>
+        </li>
+        <li>
+            <a href="Rutas/Cabecera.html">Cabecera</a>
+        </li>
+         
+     </ul>
+     </div>
+     </div>
+</nav>
+
+<div class = "contenido">  
+    <div class = " animated tada bounceInLeft">
+    <h1 class = "text-center">Usando Java Script</h1>
+    <p id="kathy" class = "borde-linea"></p>
+    <h2 class = "text-center">Variables desde Java Script</h2>
+    <div class="row borde-linea">
+        <div id = "1" class="col-sm-3 borde-linea"> </div>
+        <div  class="col-sm-3 variable borde-linea"></div>
+        <div  class="col-sm-3 borde-linea"> <foo></foo></div>
+        <div id = "2" class="col-sm-3 borde-linea"></div>
+    </div>
+    <div class="row borde-linea">
+    <div id = "3" class="col-sm-6 borde-linea"></div>
+    <div id = "4" class="col-sm-6 borde-linea"></div>
+    </div>
+    
+    
+  <div class="jumbotron">
+      <div class = "container">
+  <h1 >WorkShop Html CSS JavaScript</h1>
+          
+          <a href="Rutas/Foto.html">
+  <img class= "img-thumbnail imagen" 
+            src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/v/t1.0-1/p160x160/12063520_1061908257199397_4600172066169125768_n.jpg?oh=219e12cdd19adcdb94ec6f4d2bdd98ed&oe=583F84CB&__gda__=1480812340_446de41ec8e4e555f8940e4f39a5a41d"> 
+          </a>
+      <h2 id = "h2" >Katherine Hurtado</h2>
+      <p style="margin-left: 10px;">Esta es mi segunda clase de JavaScript y he aprendido esto: </p>
+       <ul style = "font-size: 1.5em; margin-left: 20px;">
+           <li>A utilizar estilos de 5 formas diferentes</li>
+           <li>Insertar diferentes CSS</li>
+           <li>Qué es un CDN y cómo se utilizan</li>
+           <li>Utilizar un CDN de animaciones</li>
+       </ul>
+       
+  <p><a class="btn btn-primary btn-lg btn btn-block" href="Rutas/Cabecera.html" role="button" style="margin-left: 10px;
+    margin-right: 10px;">Ir a encabezados</a></p>
+</div>
+</div>
+ </div>
+    </div>
+        
+    <!--ARCHIVOS JAVA SCRIPT -->
+        <script type = "application/javascript">
+            var numero = 1;
+            var decimal = 1.3;
+            var nombreString = "Katherine";
+            var verdadero = true;
+            var falso = false;
+            var date = new Date ();
+            
+            var elementoPorId = document.getElementById("1").innerHTML= numero;
+            console.log("El valor del numero es:"+elementoPorId);
+            
+            var arreglo = document.getElementsByClassName("variable")[0].innerHTML= nombreString;
+            console.log(arreglo [0]);
+            
+            document.getElementById("2").innerHTML = verdadero;
+            document.getElementById("3").innerHTML = falso;
+            document.getElementById("4").innerHTML = date;
+            
+            var arregloFoo = document.getElementsByTagName("foo")[0].innerHTML = decimal;
+            console.log(arregloFoo[0]);
+            
+            var arreglo1 = [1,2,3];
+            var arreglo2 = [1.1,1.2,1.3];
+            var arreglo3 = ["Katherine","Lizeth","Hurtado"];
+            var arreglo4 = [true,true,true];
+            var arreglo5 = [false,false,false];
+            var arreglo6 = [new Date(),new Date(),new Date()];
+            var arreglo7 = [1,1.2,"Katherine",true,false,new Date(),arreglo1,arreglo3];
+            
+            
+            for(var i = 0 ; i<arreglo7.length;i++){
+                console.log("Estamos en la pocisión ", i );
+                console.log(arreglo7[i]);
+            }
+            
+            console.log("*******************FUNCIONES*********************");
+            var j;
+            while(j<arreglo5.length){
+                console.log("Estamos en la pocisión ", i );
+                console.log(arreglo5[i]);
+            }
+            
+            var funcion1 = function nombreFuncion(){
+                console.log("Funcion con nombre");
+            }
+            
+            var funcion2 = function (){
+                console.log("Funcion Sin nombre");
+            }
+            
+            console.log("SP");
+            console.log(funcion1);
+            console.log("CP");
+            console.log(funcion1());
+            
+            function suma2Numeros(n1,n2){
+                return n1+n2;
+            }
+            
+            console.log(suma2Numeros(8,2));
+            console.log(suma2Numeros(5,1));
+            
+            function printNombre(nombre){
+                console.log(nombre);
+            }
+            
+            printNombre("Katherine");
+            printNombre("Lizeth");
+            
+            for (var i=0; i<5;i++){
+                
+                setTimeout(
+                    function(){
+                        console.log("elvalor de i es:", i);
+                    },3000);
+                }
+                
+                        
+            var objetoVacio ={};
+            console.log(objetoVacio);
+            
+            var objeto ={
+                nombre : "Kathy",
+                edad: 23,
+                fechaNacimiento: new Date('1993-05-20'),
+                 presentacion: function(){
+                 var infoCard = "mi nombre es: "+ this.nombre +"\n"+
+                                "mi edad es: " + this.edad + "\n"+
+                                "mi fecha de naciemiento es: " + this.fechaNacimiento+"\n";
+                 return infoCard;
+            }
+                
+                
+            }
+            
+            document.getElementById("kathy").innerHTML= objeto.presentacion();
+            console.log(objeto.presentacion());
+            
+        </script>
+            
+                    
+    </body>
+    
+    
+</html>

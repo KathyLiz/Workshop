@@ -1,0 +1,63 @@
+h1  {
+            background-color :palevioletred;
+            font-family: fantasy;
+        }
+    
+        html
+           {
+            background-color :white;  
+            font-family: cursive;
+        
+               
+           }
+           
+        h2  {
+            background-color :mediumpurple;
+            
+        }
+           h3{
+             background-color :mediumpurple;  
+           }
+           
+           
+           h4 {
+            background-color :mediumpurple;
+           }
+           
+          
+           h5{
+             background-color :mediumpurple;  
+           }
+        
+           h6{
+             background-color :mediumpurple;  
+           }
+           
+                   
+           p{
+           /* font-size: 25px;
+            cambiar de tamaño
+            border-radius: 25px;
+            background: #73AD21;
+            padding: 20px; 
+            width: 200px;
+            height: 150px; 
+           }*/
+           }
+           
+           /*es una clase con punto al inicio*/
+           .bordes-verde
+           {
+            font-size: 25px;
+            border-radius: 25px;
+            background: #e66aba;
+            padding: 20px; 
+            width: 200px;
+            height: 150px;
+           }
+           
+           .cambiar-letra
+           {
+               
+           font-style: oblique;    
+           }
